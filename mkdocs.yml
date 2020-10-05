@@ -1,0 +1,39 @@
+site_name: Softwareentwicklung Mobile
+site_url: https://stefanhuber.github.io/softwareentwicklung-mobile/
+site_author: Stefan Huber
+site_description: Ergänzende Unterlagen zur Lehrveranstaltung Softwareentwicklung Mobile
+
+repo_name: stefanhuber/softwareentwicklung-mobile
+repo_url: https://github.com/stefanhuber/softwareentwicklung-mobile
+edit_uri: ""
+
+theme:
+  name: material
+  custom_dir: material
+  language: de
+  features:
+    - tabs
+  icon:
+    logo: fontawesome/solid/mobile-alt
+
+nav:
+  - Home: 'index.md'
+  - Tutorials:
+    - Neues Projekt: 'tutorials/neues-projekt.md'
+    - Apps ausführen: 'tutorials/apps-ausführen.md'
+    - adb: 'tutorials/adb.md'
+
+copyright: 'CC-BY-SA / Stefan Huber'
+
+docs_dir: content
+site_dir: docs
+
+extra:
+  search:
+    language: de
+
+markdown_extensions:
+  - attr_list 
+  - markdown.extensions.admonition
+  - markdown.extensions.codehilite:
+      guess_lang: false
