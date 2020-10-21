@@ -24,6 +24,7 @@ nav:
     - adb: 'tutorials/adb.md'
   - Übungen:
     - Übungsblatt 1: 'übungen/01.md'
+    - Übungsblatt 2: 'übungen/02.md'
 
 copyright: 'CC-BY-SA / Stefan Huber'
 
