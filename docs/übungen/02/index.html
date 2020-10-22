@@ -537,6 +537,24 @@
 
 <p>Mit dem <code>ObjectAnimator</code> können die Buttons animiert werden und damit kann die Blinkeigenschaft des Spieles erzeugt werden. Das Blinken des Buttons soll über die Animation des Alphawerts von <code>100%</code> auf <code>60%</code> gesetzt und wieder zurück gesetzt werden.</p>
 <p>Die Instanzen der <code>ObjectAnimator</code> Klasse können als Array in ein <code>AnimatorSet</code> über die Methode <code>playSequentially</code> hinzugefügt werden. Das <code>AnimatorSet</code> kann dann über die Methode <code>start</code> abgespielt werden.</p>
+<div class="codehilite"><pre><span></span><code><span class="c1">// Array von ObjectAnimator Instanzen erzeugen</span>
+<span class="n">ObjectAnimator</span><span class="o">[]</span> <span class="n">oas</span> <span class="o">=</span> <span class="k">new</span> <span class="n">ObjectAnimator</span><span class="o">[</span><span class="n">sequence</span><span class="p">.</span><span class="na">length</span><span class="o">]</span><span class="p">;</span>
+
+<span class="c1">// ObjectAnimator Instanzen erzeugen und im oas Array hinzufgen</span>
+<span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">oas</span><span class="p">.</span><span class="na">length</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+    <span class="c1">// oas[i] = ...</span>
+<span class="p">}</span>
+
+<span class="n">AnimatorSet</span> <span class="n">am</span> <span class="o">=</span> <span class="k">new</span> <span class="n">AnimatorSet</span><span class="p">();</span>
+
+<span class="c1">// Array von ObjectAnimator Instanzen hinzufügen</span>
+<span class="n">am</span><span class="p">.</span><span class="na">playSequentially</span><span class="p">(</span><span class="n">oas</span><span class="p">);</span> 
+
+<span class="c1">// Alle ObjectAnimator Instanzen abspielen</span>
+<span class="n">am</span><span class="p">.</span><span class="na">start</span><span class="p">();</span>
+</code></pre></div>
+
+
 <p>Als Test soll in der Methode <code>onCreate</code> die Methode <code>animateButtons</code> mit einer Testsequenz aufgerufen werden. Zum Beispiel würde die folgende Sequenz die 4 Buttons nacheinander abspielen.</p>
 <div class="codehilite"><pre><span></span><code><span class="n">animateButtons</span><span class="p">(</span><span class="kt">int</span><span class="o">[]</span> <span class="p">{</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">});</span>
 </code></pre></div>
