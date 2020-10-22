@@ -540,7 +540,7 @@
 <div class="codehilite"><pre><span></span><code><span class="c1">// Array von ObjectAnimator Instanzen erzeugen</span>
 <span class="n">ObjectAnimator</span><span class="o">[]</span> <span class="n">oas</span> <span class="o">=</span> <span class="k">new</span> <span class="n">ObjectAnimator</span><span class="o">[</span><span class="n">sequence</span><span class="p">.</span><span class="na">length</span><span class="o">]</span><span class="p">;</span>
 
-<span class="c1">// ObjectAnimator Instanzen erzeugen und im oas Array hinzufgen</span>
+<span class="c1">// ObjectAnimator Instanzen erzeugen und im oas Array hinzufügen</span>
 <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">oas</span><span class="p">.</span><span class="na">length</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
     <span class="c1">// oas[i] = ...</span>
 <span class="p">}</span>
@@ -570,6 +570,20 @@
 <li>Falls die Sequenz von der Benutzerin richtig wiedergegeben wurde, soll eine neue Zufallszahl (zwischen 0 und 3) erzeugt werden und in der ArrayList hinzugefügt werden. Danach soll wieder bei Schritt 1 gestartet werden.</li>
 <li>Falls die Sequenz von der Benutzerin nicht richtig wiedergegeben wurde, soll die Länge der richtig gespielten Buttons über ein <code>Extra</code> an eine <code>GameOverActivity</code> (Übung 4) übergeben werden.</li>
 </ol>
+<div class="admonition info">
+<p class="admonition-title">Hinweis</p>
+<p>Eine einfache Möglichkeit um eine <code>ArrayList&lt;Integer&gt;</code> in ein <code>int[]</code> Array zu überführen ist über eine Schleife, wie im folgenden Snippet demonstriert:</p>
+<div class="codehilite"><pre><span></span><code>ArrayList&lt;Integer&gt; list = new ArrayList&lt;&gt;();
+// ... Einträge hinzufügen
+
+int sequence[] = new int[list.size()];
+for (int i = 0; i &lt; sequence.length; i++) {
+    sequence[i] = list.get(i);
+}
+</code></pre></div>
+
+
+</div>
 <h2 id="ubung-4-2h">Übung 4 (2h)</h2>
 <p>Es sollen 2 weitere <code>Activities</code> eingeführt werden und die aktuelle <code>MainActivity</code> soll zu einer <code>GameActivity</code> refactored werden:</p>
 <ul>
