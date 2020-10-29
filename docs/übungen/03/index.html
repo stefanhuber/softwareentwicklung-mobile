@@ -534,16 +534,14 @@
                 
                 <h1 id="ubungsblatt-3">Übungsblatt 3</h1>
 <h2 id="ubung-0">Übung 0</h2>
-<p>In der Übung 0 soll gemeinsam die Grundlage für die App <code>Task Master</code> entwickelt werden. Es sollen über das Room Framework eigene Task verwaltet werden können. Ein Task soll dabei folgenden Aufbau haben:</p>
+<p>In der Übung 0 soll gemeinsam die Grundlage für die App <code>Task Master</code> entwickelt werden. Es sollen über das Room Framework eigene Tasks verwaltet werden können. Ein Task soll dabei folgenden Aufbau haben:</p>
 <div class="codehilite"><pre><span></span><code><span class="nd">@Entity</span>
 <span class="kd">class</span> <span class="nc">Task</span> <span class="p">{</span>
-    <span class="nd">@PrimaryKey</span><span class="p">(</span><span class="n">autogenerate</span><span class="o">=</span><span class="kc">true</span><span class="p">)</span>
+    <span class="nd">@PrimaryKey</span><span class="p">(</span><span class="n">autoGenerate</span><span class="o">=</span><span class="kc">true</span><span class="p">)</span>
     <span class="kd">public</span> <span class="kt">int</span> <span class="n">id</span><span class="p">;</span>
     <span class="kd">public</span> <span class="n">String</span> <span class="n">title</span><span class="p">;</span>
     <span class="kd">public</span> <span class="n">String</span> <span class="n">priority</span><span class="p">;</span>
-    <span class="kd">public</span> <span class="kt">int</span> <span class="n">year</span><span class="p">;</span>
-    <span class="kd">public</span> <span class="kt">int</span> <span class="n">month</span><span class="p">;</span>
-    <span class="kd">public</span> <span class="kt">int</span> <span class="n">day</span><span class="p">;</span>
+    <span class="kd">public</span> <span class="n">Date</span> <span class="n">dueDate</span><span class="p">;</span>
 <span class="p">}</span>
 </code></pre></div>
 
