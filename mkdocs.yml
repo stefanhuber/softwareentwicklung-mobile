@@ -25,7 +25,8 @@ nav:
   - Übungen:
     - Übungsblatt 1: 'übungen/01.md'
     - Übungsblatt 2: 'übungen/02.md'
-
+    - Übungsblatt 3: 'übungen/03.md'
+    
 copyright: 'CC-BY-SA / Stefan Huber'
 
 docs_dir: content
