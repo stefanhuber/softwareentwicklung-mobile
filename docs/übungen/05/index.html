@@ -1,0 +1,553 @@
+
+
+
+
+<!doctype html>
+<html lang="de" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Ergänzende Unterlagen zur Lehrveranstaltung Softwareentwicklung Mobile">
+      
+      
+        <link rel="canonical" href="https://stefanhuber.github.io/softwareentwicklung-mobile/%C3%BCbungen/05/">
+      
+      
+        <meta name="author" content="Stefan Huber">
+      
+      <link rel="shortcut icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-5.5.13">
+    
+    
+      
+        <title>Übungsblatt 5 - Softwareentwicklung Mobile</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.077507d7.min.css">
+      
+      
+    
+    
+    
+      
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>body,input{font-family:"Roboto",-apple-system,BlinkMacSystemFont,Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono",SFMono-Regular,Consolas,Menlo,monospace}</style>
+      
+    
+    
+    
+    
+      
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#ubungsblatt-5" class="md-skip">
+          Zum Inhalt
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid" aria-label="Header">
+    <a href="https://stefanhuber.github.io/softwareentwicklung-mobile/" title="Softwareentwicklung Mobile" class="md-header-nav__button md-logo" aria-label="Softwareentwicklung Mobile">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path d="M272 0H48C21.5 0 0 21.5 0 48v416c0 26.5 21.5 48 48 48h224c26.5 0 48-21.5 48-48V48c0-26.5-21.5-48-48-48zM160 480c-17.7 0-32-14.3-32-32s14.3-32 32-32 32 14.3 32 32-14.3 32-32 32zm112-108c0 6.6-5.4 12-12 12H60c-6.6 0-12-5.4-12-12V60c0-6.6 5.4-12 12-12h200c6.6 0 12 5.4 12 12v312z"/></svg>
+
+    </a>
+    <label class="md-header-nav__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header-nav__title" data-md-component="header-title">
+      
+        <div class="md-header-nav__ellipsis">
+          <span class="md-header-nav__topic md-ellipsis">
+            Softwareentwicklung Mobile
+          </span>
+          <span class="md-header-nav__topic md-ellipsis">
+            
+              Übungsblatt 5
+            
+          </span>
+        </div>
+      
+    </div>
+    
+      <label class="md-header-nav__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Suche" placeholder="Suche" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active">
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <button type="reset" class="md-search__icon md-icon" aria-label="Clear" data-md-component="search-reset" tabindex="-1">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Suche wird initialisiert
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header-nav__source">
+        
+<a href="https://stefanhuber.github.io/softwareentwicklung-mobile/" title="Quellcode" class="md-source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M439.55 236.05L244 40.45a28.87 28.87 0 00-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 01-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 000 40.81l195.61 195.6a28.86 28.86 0 0040.8 0l194.69-194.69a28.86 28.86 0 000-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    stefanhuber/softwareentwicklung-mobile
+  </div>
+</a>
+      </div>
+    
+  </nav>
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+        
+      
+      
+        
+          
+
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-tabs__inner md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  <li class="md-tabs__item">
+    
+      <a href="../.." class="md-tabs__link md-tabs__link--active">
+        Home
+      </a>
+    
+  </li>
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../../tutorials/neues-projekt/" class="md-tabs__link">
+          Tutorials
+        </a>
+      
+    </li>
+  
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../01/" class="md-tabs__link">
+          Übungen
+        </a>
+      
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="https://stefanhuber.github.io/softwareentwicklung-mobile/" title="Softwareentwicklung Mobile" class="md-nav__button md-logo" aria-label="Softwareentwicklung Mobile">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path d="M272 0H48C21.5 0 0 21.5 0 48v416c0 26.5 21.5 48 48 48h224c26.5 0 48-21.5 48-48V48c0-26.5-21.5-48-48-48zM160 480c-17.7 0-32-14.3-32-32s14.3-32 32-32 32 14.3 32 32-14.3 32-32 32zm112-108c0 6.6-5.4 12-12 12H60c-6.6 0-12-5.4-12-12V60c0-6.6 5.4-12 12-12h200c6.6 0 12 5.4 12 12v312z"/></svg>
+
+    </a>
+    Softwareentwicklung Mobile
+  </label>
+  
+    <div class="md-nav__source">
+      
+<a href="https://stefanhuber.github.io/softwareentwicklung-mobile/" title="Quellcode" class="md-source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M439.55 236.05L244 40.45a28.87 28.87 0 00-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 01-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 000 40.81l195.61 195.6a28.86 28.86 0 0040.8 0l194.69-194.69a28.86 28.86 0 000-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    stefanhuber/softwareentwicklung-mobile
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../.." title="Home" class="md-nav__link">
+      Home
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2">
+    
+    <label class="md-nav__link" for="nav-2">
+      Tutorials
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Tutorials" data-md-level="1">
+      <label class="md-nav__title" for="nav-2">
+        <span class="md-nav__icon md-icon"></span>
+        Tutorials
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../tutorials/neues-projekt/" title="Neues Projekt" class="md-nav__link">
+      Neues Projekt
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../tutorials/apps-ausf%C3%BChren/" title="Apps ausführen" class="md-nav__link">
+      Apps ausführen
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../tutorials/adb/" title="adb" class="md-nav__link">
+      adb
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3">
+    
+    <label class="md-nav__link" for="nav-3">
+      Übungen
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Übungen" data-md-level="1">
+      <label class="md-nav__title" for="nav-3">
+        <span class="md-nav__icon md-icon"></span>
+        Übungen
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../01/" title="Übungsblatt 1" class="md-nav__link">
+      Übungsblatt 1
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../02/" title="Übungsblatt 2" class="md-nav__link">
+      Übungsblatt 2
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../03/" title="Übungsblatt 3" class="md-nav__link">
+      Übungsblatt 3
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../04/" title="Übungsblatt 4" class="md-nav__link">
+      Übungsblatt 4
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary" aria-label="Inhaltsverzeichnis">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Inhaltsverzeichnis
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#ubung-0" class="md-nav__link">
+    Übung 0
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ubung-1-4h" class="md-nav__link">
+    Übung 1 (4h)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ubung-2-4h" class="md-nav__link">
+    Übung 2 (4h)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ubung-3-1h" class="md-nav__link">
+    Übung 3 (1h)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ubung-4-3h" class="md-nav__link">
+    Übung 4 (3h)
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                  
+                
+                
+                <h1 id="ubungsblatt-5">Übungsblatt 5</h1>
+<p>Die App <strong>Geo Tracker</strong> soll eine Route, welche beispielsweise zu Fuß begangen wird, tracken und entsprechend über eine Karte anzeigen können. Tracken in diesem Zusammenhang bedeutet, dass die Geokoordinaten kontinuierlich abgefragt und gespeichert werden.</p>
+<p>Die Datenstrukturen in der Datenbank sollen folgend aussehen:</p>
+<div class="codehilite"><pre><span></span><code><span class="kd">class</span> <span class="nc">Track</span> <span class="p">{</span>
+    <span class="kd">public</span> <span class="kt">long</span> <span class="n">id</span><span class="p">;</span>
+    <span class="kd">public</span> <span class="n">String</span> <span class="n">title</span><span class="p">;</span>
+    <span class="kd">public</span> <span class="n">String</span> <span class="n">description</span><span class="p">;</span>
+    <span class="kd">public</span> <span class="n">Date</span> <span class="n">start</span><span class="p">;</span>
+    <span class="kd">public</span> <span class="n">Date</span> <span class="n">end</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="kd">class</span> <span class="nc">Location</span> <span class="p">{</span>
+    <span class="kd">public</span> <span class="kt">long</span> <span class="n">id</span><span class="p">;</span>
+    <span class="kd">public</span> <span class="kt">double</span> <span class="n">latitude</span><span class="p">;</span>
+    <span class="kd">public</span> <span class="kt">double</span> <span class="n">longitude</span><span class="p">;</span>
+    <span class="kd">public</span> <span class="kt">double</span> <span class="n">altidude</span><span class="p">;</span>
+    <span class="kd">public</span> <span class="n">Date</span> <span class="n">timestamp</span><span class="p">;</span>
+    <span class="kd">public</span> <span class="kt">long</span> <span class="n">trackId</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div>
+
+
+<h2 id="ubung-0">Übung 0</h2>
+<p>Innerhalb einer <code>RecyclerView</code> sollen aufgenommene Tracks angezeigt werden. Jeder Track soll dabei als <code>CardView</code> realisiert werden. Die <code>CardView</code> soll mittels des Material Designs realisiert werden (<a href="https://material.io/develop/android/components/cards">Link</a>).</p>
+<p>Eine <code>CardView</code> soll folgendes enthalten:</p>
+<ul>
+<li>Titel</li>
+<li>Dauer des Tracks (zB 1h 14min)</li>
+<li>Beschreibung (falls vorhanden)</li>
+<li>Buttons: Edit, Map</li>
+</ul>
+<p>Es soll ebenfalls ein Floating Action Button angelegt werden, welcher bei Klick prüfen soll, ob die Permission zum Tracking vorhanden sind und ob GPS aktiviert ist.</p>
+<h2 id="ubung-1-4h">Übung 1 (4h)</h2>
+<p>Das Tracking soll innerhalb eines <code>Foreground Service</code> realisiert werden. Der Service soll dabei in der Methode <code>onStartCommand</code> auf 4 Intent Actions reagieren:</p>
+<ul>
+<li><code>TOGGLE</code>: Dieser Intent soll grundsätzlich nur von der MainActivity der App kommen. Da in der App der Status des Services nicht bekannt ist, sollen unterschiedliche passieren:</li>
+<li>Falls der Service aktuell kein Tracking durchführt, soll ein neuer Track erzeugt werden und das Tracking soll gestartet werden.</li>
+<li>Falls der Service aktuell ein Tracking durchführt, soll dieses pausiert werden.</li>
+<li>Falls der Service aktuell ein Tracking pausiert hat, soll dieses wieder gestartet werden.</li>
+<li><code>CONTINUE</code>: Dieser Intent soll grundsätzlich nur von der Notification kommen und das Tracking weiterführen.</li>
+<li><code>PAUSE</code>: Dieser Intent soll grundsätzlich nur von der Notification kommen und das Tracking pausieren.</li>
+<li><code>STOP</code>: Dieser Intent soll grundsätzlich nur von der Notification kommen und das Tracking stoppen.</li>
+</ul>
+<p>Innerhalb der Übung 1 soll sich dabei nur die Notification entsprechend verändern. Das tatsächliche Tracking soll innerhalb von Übung 2 realisiert werden.</p>
+<h2 id="ubung-2-4h">Übung 2 (4h)</h2>
+<p>Beim Start des Trackings soll einer neuer <code>Track</code> in der Datenbank angelegt werden der Titel soll dabei vorläufig mit Datum und Uhrzeit belegt werden, das Startdatum mit dem aktuellen Timestamp. Mit dem <code>FusedLocationProvider</code> sollen im Interval von 5 Sekunden und einer mindest Änderung von 5 Metern getrackt werden. Jedes <code>Location Update</code> soll als <code>Location</code> in die Datenbank gespeichert werden. Das Tracking soll entsprechend gesteuert werden über die Intentverarbeitung aus Übung 1.</p>
+<h2 id="ubung-3-1h">Übung 3 (1h)</h2>
+<p>Mit Klick auf den <code>Edit</code> Button auf der <code>Card</code> in der <code>RecyclerView</code> soll ein Formular geöffnet werden. Im Formular soll der Titel und die Beschreibung des Tracks editiert werden können.</p>
+<p>Beim Laden des Formulars sollen die bestehenden Inhalte in das Formular geladen werden.</p>
+<h2 id="ubung-4-3h">Übung 4 (3h)</h2>
+<p>Es soll eine Karteansicht der getrackten Route dargestellt werden. Dazu soll im ersten Schritt die osmdroid MapView innerhalb einer neuen Activity (MapActivity) angezeigt werden. Dabei soll das Mapnik Kartenmaterial verwendet werden. Bei Klick auf „Track anzeigen“ wird diese MapActivity geöffnet (Aktuelle Version osmdroid: 6.1.8).</p>
+<p>Innerhalb der Karte soll die getrackte Route dargestellt werden. Dazu kann eine sog. Polyline verwendet werden, welche die Punkte geordnet nach Datum als Liste bereitstellt.
+Link: <a href="http://osmdroid.github.io/osmdroid/Markers,-Lines-and-Polygons.html">http://osmdroid.github.io/osmdroid/Markers,-Lines-and-Polygons.html</a></p>
+<p>Die <code>Location</code> Objekte sollen über den Dao abgefragt werden. Die Query soll dabei die Track ID verwenden. Die <code>Locations</code> müssen dabei nach  Timestamp sortiert werden.</p>
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+          <div class="md-footer-copyright__highlight">
+            CC-BY-SA / Stefan Huber
+          </div>
+        
+        Made with
+        <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+          Material for MkDocs
+        </a>
+      </div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../../assets/javascripts/vendor.2d1db4bd.min.js"></script>
+      <script src="../../assets/javascripts/bundle.6627ddf3.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "In Zwischenablage kopieren", "clipboard.copied": "In Zwischenablage kopiert", "search.config.lang": "de", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.result.placeholder": "Suchbegriff eingeben", "search.result.none": "Keine Suchergebnisse", "search.result.one": "1 Suchergebnis", "search.result.other": "# Suchergebnisse"}</script>
+      
+      <script>
+        app = initialize({
+          base: "../..",
+          features: ['tabs'],
+          search: Object.assign({
+            worker: "../../assets/javascripts/worker/search.5eca75d3.min.js"
+          }, typeof search !== "undefined" && search)
+        })
+      </script>
+      
+    
+  </body>
+</html>
