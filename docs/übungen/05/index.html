@@ -563,11 +563,17 @@
 <h2 id="ubung-1-4h">Übung 1 (4h)</h2>
 <p>Das Tracking soll innerhalb eines <code>Foreground Service</code> realisiert werden. Der Service soll dabei in der Methode <code>onStartCommand</code> auf 4 Intent Actions reagieren:</p>
 <ul>
-<li><code>TOGGLE</code>: Dieser Intent soll grundsätzlich nur von der MainActivity der App kommen. Da in der App der Status des Services nicht bekannt ist, sollen unterschiedliche passieren:</li>
+<li>
+<p><code>TOGGLE</code>: Dieser Intent soll grundsätzlich nur von der MainActivity der App kommen. Da in der App der Status des Services nicht bekannt ist, sollen unterschiedliche passieren:</p>
+<ul>
 <li>Falls der Service aktuell kein Tracking durchführt, soll ein neuer Track erzeugt werden und das Tracking soll gestartet werden.</li>
 <li>Falls der Service aktuell ein Tracking durchführt, soll dieses pausiert werden.</li>
 <li>Falls der Service aktuell ein Tracking pausiert hat, soll dieses wieder gestartet werden.</li>
-<li><code>CONTINUE</code>: Dieser Intent soll grundsätzlich nur von der Notification kommen und das Tracking weiterführen.</li>
+</ul>
+</li>
+<li>
+<p><code>CONTINUE</code>: Dieser Intent soll grundsätzlich nur von der Notification kommen und das Tracking weiterführen.</p>
+</li>
 <li><code>PAUSE</code>: Dieser Intent soll grundsätzlich nur von der Notification kommen und das Tracking pausieren.</li>
 <li><code>STOP</code>: Dieser Intent soll grundsätzlich nur von der Notification kommen und das Tracking stoppen.</li>
 </ul>
