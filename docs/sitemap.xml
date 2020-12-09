@@ -1,39 +1,43 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"><url>
      <loc>https://stefanhuber.github.io/softwareentwicklung-mobile/</loc>
-     <lastmod>2020-11-24</lastmod>
+     <lastmod>2020-12-09</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://stefanhuber.github.io/softwareentwicklung-mobile/tutorials/neues-projekt/</loc>
-     <lastmod>2020-11-24</lastmod>
+     <lastmod>2020-12-09</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://stefanhuber.github.io/softwareentwicklung-mobile/tutorials/apps-ausf%C3%BChren/</loc>
-     <lastmod>2020-11-24</lastmod>
+     <lastmod>2020-12-09</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://stefanhuber.github.io/softwareentwicklung-mobile/tutorials/adb/</loc>
-     <lastmod>2020-11-24</lastmod>
+     <lastmod>2020-12-09</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://stefanhuber.github.io/softwareentwicklung-mobile/%C3%BCbungen/01/</loc>
-     <lastmod>2020-11-24</lastmod>
+     <lastmod>2020-12-09</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://stefanhuber.github.io/softwareentwicklung-mobile/%C3%BCbungen/02/</loc>
-     <lastmod>2020-11-24</lastmod>
+     <lastmod>2020-12-09</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://stefanhuber.github.io/softwareentwicklung-mobile/%C3%BCbungen/03/</loc>
-     <lastmod>2020-11-24</lastmod>
+     <lastmod>2020-12-09</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://stefanhuber.github.io/softwareentwicklung-mobile/%C3%BCbungen/04/</loc>
-     <lastmod>2020-11-24</lastmod>
+     <lastmod>2020-12-09</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://stefanhuber.github.io/softwareentwicklung-mobile/%C3%BCbungen/05/</loc>
-     <lastmod>2020-11-24</lastmod>
+     <lastmod>2020-12-09</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>https://stefanhuber.github.io/softwareentwicklung-mobile/%C3%BCbungen/06/</loc>
+     <lastmod>2020-12-09</lastmod>
      <changefreq>daily</changefreq>
     </url>
 </urlset>
