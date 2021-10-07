@@ -13,14 +13,14 @@
         <meta name="author" content="Stefan Huber">
       
       
-        <link rel="canonical" href="https://stefanhuber.github.io/softwareentwicklung-mobile/tutorials/adb/">
+        <link rel="canonical" href="https://stefanhuber.github.io/softwareentwicklung-mobile/%C3%BCbungen/_01/">
       
       <link rel="icon" href="../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.2.2, mkdocs-material-7.2.0">
     
     
       
-        <title>adb - Softwareentwicklung Mobile</title>
+        <title>Übungsblatt 1 - Softwareentwicklung Mobile</title>
       
     
     
@@ -67,7 +67,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#adb-android-debug-bridge" class="md-skip">
+        <a href="#ubungsblatt-1" class="md-skip">
           Zum Inhalt
         </a>
       
@@ -97,7 +97,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              adb
+              Übungsblatt 1
             
           </span>
         </div>
@@ -220,14 +220,12 @@
 
   
   
-    
-  
   
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" type="checkbox" id="__nav_2" checked>
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" type="checkbox" id="__nav_2" >
       
       <label class="md-nav__link" for="__nav_2">
         Tutorials
@@ -245,7 +243,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../neues-projekt/" class="md-nav__link">
+      <a href="../../tutorials/neues-projekt/" class="md-nav__link">
         Neues Projekt
       </a>
     </li>
@@ -257,7 +255,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../apps-ausf%C3%BChren/" class="md-nav__link">
+      <a href="../../tutorials/apps-ausf%C3%BChren/" class="md-nav__link">
         Apps ausführen
       </a>
     </li>
@@ -267,21 +265,11 @@
             
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../tutorials/adb/" class="md-nav__link">
         adb
       </a>
-      
     </li>
   
 
@@ -321,7 +309,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../%C3%BCbungen/01/" class="md-nav__link">
+      <a href="../01/" class="md-nav__link">
         Übungsblatt 1
       </a>
     </li>
@@ -353,6 +341,49 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Inhaltsverzeichnis
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#ubung-0" class="md-nav__link">
+    Übung 0
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ubung-1-15h" class="md-nav__link">
+    Übung 1 (1,5h)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ubung-2-15h" class="md-nav__link">
+    Übung 2 (1,5h)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ubung-3-3h" class="md-nav__link">
+    Übung 3 (3h)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ubung-4-4h" class="md-nav__link">
+    Übung 4 (4h)
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -363,39 +394,48 @@
             <article class="md-content__inner md-typeset">
               
                 
-                  <a href="https://github.com/stefanhuber/softwareentwicklung-mobile/edit/master/content/tutorials/adb.md" title="Seite editieren" class="md-content__button md-icon">
+                  <a href="https://github.com/stefanhuber/softwareentwicklung-mobile/edit/master/content/übungen/_01.md" title="Seite editieren" class="md-content__button md-icon">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></svg>
                   </a>
                 
                 
-                <h1 id="adb-android-debug-bridge">adb (Android Debug Bridge)</h1>
-<p><code>adb</code> ist ein Kommandozeilenprogramm mit dem unterschiedliche Aufgaben auf einem verknüpften Android Gerät ausgeführt werden können. Am verknüpfen Android Gerät läuft ein Dienst (Daemon) <code>adbd</code>, welcher über das Kommandozeilenprogramm <code>adb</code> auf dem Entwicklungsrechner angesprochen werden kann.</p>
-<p>Mit der Installation von Android Studio wird <code>adb</code> am Entwicklungsrechner installiert und kann über die Kommandozeile genutzt werden.</p>
-<p><img alt="adb Beispiel" src="../images/03-adb-1.png" title="adb Beispiel" /></p>
-<h1 id="beispiele">Beispiele</h1>
-<h3 id="verknupfte-gerate-auflisten">Verknüpfte Geräte auflisten</h3>
-<div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="1 "></span>&gt; adb devices
+                <h1 id="ubungsblatt-1">Übungsblatt 1</h1>
+<h2 id="ubung-0">Übung 0</h2>
+<p>Die Android Dokumentation stellt ein gut dokumentiertes Tutorial <a href="https://developer.android.com/training/basics/firstapp">"Build your first app"</a> bereit. Dieses Tutorial soll Schritt für Schritt durchgeführt werden.</p>
+<h2 id="ubung-1-15h">Übung 1 (1,5h)</h2>
+<p>Erstellen Sie eine neue App mit dem Namen „Sixteen Buttons“. Diese App soll einen Screen besitzen und ein Layout. Das Layout soll dabei ein <code>LinearLayout</code> sein, welches <strong>programmatisch</strong> beim Start der Activity mit 16 Buttons befüllt wird (siehe Screenshot). Wichtig zu beachten ist, dass das <code>LinearLayout</code> von einer <code>ScrollView</code> umgeben sein soll, sodass Buttons die nicht in den Screen passen durch Scrollen erreichbar sind. Die Buttons sollen mit dem Text <code>Button 1</code> bis <code>Button 16</code> beschriftet sein.</p>
+<p><img alt="16 Buttons" src="../images/01-16-Buttons.png" style="max-width:260px;" title="16 Buttons" /></p>
+<div class="admonition info">
+<p class="admonition-title">Hinweis</p>
+<p>Die 16 Buttons sollen innerhalb einer Schleife in der Methode <code>onCreate</code> hinzugefügt werden. Mit der Methode <code>findViewById</code> kann das <code>LinearLayout</code> im Java Code referenziert werden. Das <code>LinearLayout</code> erbt von <code>ViewGroup</code> und verfügt deshalb über die Methode <code>addView</code>. Mit der Methode <code>addView</code> können die Buttons dem Layout hinzugefügt werden.</p>
+</div>
+<h2 id="ubung-2-15h">Übung 2 (1,5h)</h2>
+<p>Mit Klick auf einen der Buttons soll ein <code>Toast</code> abgesetzt werden. Der Inhalt des Toasts soll "Klick auf Button x" sein. Dabei soll der Platzhalter x mit der entsprechenden Nummerierung des Buttons ausgetauscht werden. Hierbei kann der Wert der Button Aufschrift genutzt werden, welche in Übung 1 gesetzt wurde. Mit der Methode <code>getText</code> der Klasse Button kann dieser Wert abgefragt werden.</p>
+<p><img alt="Toast" src="../images/01-Toast.png" style="max-width:260px;" title="Toast" /></p>
+<h2 id="ubung-3-3h">Übung 3 (3h)</h2>
+<p>Das Projekt soll nun zu einem kleinen Spiel weiterentwickelt werden.</p>
+<ol>
+<li>Nach dem Zufallsprinzip soll ein Button aus der Liste ausgewählt werden und mit einer roten Schriftfarbe versehen werden.</li>
+<li>Nur beim Klick auf den Button mit der roten Schrift soll der Toast aus Übung 2 abgesetzt werden.</li>
+<li>Nachdem auf den Button mit roter Schrift geklickt wurde, soll wieder zu Schritt 1 übergegangen werden und ein neuer zufälliger Button eine rote Schriftfarbe bekommen.</li>
+</ol>
+<p><img alt="Rote Farbe" src="../images/01-Rote-Farbe.png" style="max-width:260px;" title="Rote Farbe" /></p>
+<div class="admonition info">
+<p class="admonition-title">Hinweis</p>
+<p>Das <code>LinearLayout</code> besitzt die Methoden <code>getChildCount</code> und <code>getChildAt</code>. Jedes Kind des <code>LinearLayout</code> kann über einen Index abgefragt werden, die Indizes liegen dabei zwischen <code>0</code> und <code>getChildCount - 1</code> (ähnlich wie bei Arrays). Mit der Methode <code>setTextColor</code> kann eine Farbe gesetzt werden. Mit der Methode <code>getCurrentTextColor</code> kann die aktuelle Farbe abgefragt werden. Mit statischen Methoden und Eigenschaften der Klasse <code>Color</code> können entsprechende Farbwerte erzeugt werden.</p>
+</div>
+<h2 id="ubung-4-4h">Übung 4 (4h)</h2>
+<p>Mit Klick auf den ersten Button mit roter Schrift soll ein Timestamp (<code>System.currentTimeMillis</code>) erstellt werden. Nachdem gesamt 5 Buttons mit roter Schrift geklickt wurden, soll die Zeitspanne seit dem ersten erfolgreichen Klick errechnet werden. Dannach soll eine weitere Activity (<code>GameOverActivity</code>), mittels Intent, gestartet werden und als <code>Extra</code> soll die Zeitspanne übergeben werden. Die <code>GameOverActivity</code> soll folgendes Layout haben:</p>
+<p><img alt="Game Over" src="../images/01-Game-Over.png" style="max-width:260px;" title="Game Over" /></p>
+<p>Mit Klick auf den Button <code>Neustart</code> soll das Spiel "Sixteen Buttons" wieder gestartet werden. Wichtig ist dabei, dass der Timestamp bei Klick auf den ersten Button mit roter Schrift wieder zurückgesetzt wird und das Spiel kann wieder gestartet werden.</p>
+<div class="admonition info">
+<p class="admonition-title">Hinweis</p>
+<p>Die Navigation zwischen den einzelnen <code>Activities</code> wird über <code>Intents</code> durchgeführt. Damit die jeweiligen <code>Activities</code> nicht mehrmals auf den <code>Back Stack</code> gelegt werden, sollten die <code>Intents</code> mit dem Flag <code>FLAG_ACTIVITY_CLEAR_TOP</code> versehen werden. Dazu soll die Methode <code>addFlags</code> verwendet werden. Das folgende Snippet soll dies veranschaulichen:</p>
+<div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="1 "></span>Intent intent = new Intent(...);
+<span class="linenos" data-linenos="2 "></span>intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+<span class="linenos" data-linenos="3 "></span>startActivity(intent);
 </code></pre></div>
-<h3 id="daten-auf-das-gerat-laden-push">Daten auf das Gerät laden (push)</h3>
-<div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="1 "></span>&gt; adb push C:\lokale-datei.txt /sdcard/pushedfile.txt
-</code></pre></div>
-<h3 id="daten-vom-gerat-herunterladen-pull">Daten vom Gerät herunterladen (pull)</h3>
-<div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="1 "></span>&gt; adb pull /sdcard/remotefile.txt C:\lokale-remote-datei.txt
-</code></pre></div>
-<h3 id="shell">Shell</h3>
-<p>Über <code>adb</code> kann man sich auf die Linux-Shell des Android-Geräts einloggen.</p>
-<div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="1 "></span>&gt; adb shell
-</code></pre></div>
-<h4 id="impliziten-intent-starten">Impliziten Intent starten</h4>
-<div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="1 "></span>&gt; adb shell
-<span class="linenos" data-linenos="2 "></span>&gt; am start -a android.intent.action.SENDTO -d sms:+43234235235 -e sms_body &quot;hello world&quot;
-</code></pre></div>
-<h4 id="screenshot-machen-und-herunterladen">Screenshot machen und herunterladen</h4>
-<div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="1 "></span>&gt; adb shell
-<span class="linenos" data-linenos="2 "></span>&gt; screencap /sdcard/screenshot.png
-<span class="linenos" data-linenos="3 "></span>&gt; exit
-<span class="linenos" data-linenos="4 "></span>&gt; adb pull /sdcard/screenshot.png ./screenshot.png
-</code></pre></div>
+</div>
                 
               
               
@@ -411,41 +451,6 @@
       
         
 <footer class="md-footer">
-  
-    <nav class="md-footer__inner md-grid" aria-label="Footer">
-      
-        
-        <a href="../apps-ausf%C3%BChren/" class="md-footer__link md-footer__link--prev" aria-label="Zurück: Apps ausführen" rel="prev">
-          <div class="md-footer__button md-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
-          </div>
-          <div class="md-footer__title">
-            <div class="md-ellipsis">
-              <span class="md-footer__direction">
-                Zurück
-              </span>
-              Apps ausführen
-            </div>
-          </div>
-        </a>
-      
-      
-        
-        <a href="../../%C3%BCbungen/01/" class="md-footer__link md-footer__link--next" aria-label="Weiter: Übungsblatt 1" rel="next">
-          <div class="md-footer__title">
-            <div class="md-ellipsis">
-              <span class="md-footer__direction">
-                Weiter
-              </span>
-              Übungsblatt 1
-            </div>
-          </div>
-          <div class="md-footer__button md-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
-          </div>
-        </a>
-      
-    </nav>
   
   <div class="md-footer-meta md-typeset">
     <div class="md-footer-meta__inner md-grid">

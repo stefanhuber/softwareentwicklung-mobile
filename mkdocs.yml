@@ -4,8 +4,8 @@ site_author: Stefan Huber
 site_description: Ergänzende Unterlagen zur Lehrveranstaltung Softwareentwicklung Mobile
 
 repo_name: stefanhuber/softwareentwicklung-mobile
-repo_url: https://stefanhuber.github.io/softwareentwicklung-mobile/ 
-edit_uri: ""
+repo_url: https://github.com/stefanhuber/softwareentwicklung-mobile 
+edit_uri: https://github.com/stefanhuber/softwareentwicklung-mobile/edit/master/content
 
 theme:
   name: material
@@ -24,11 +24,12 @@ nav:
     - adb: 'tutorials/adb.md'
   - Übungen:
     - Übungsblatt 1: 'übungen/01.md'
-    - Übungsblatt 2: 'übungen/02.md'
-    - Übungsblatt 3: 'übungen/03.md'
-    - Übungsblatt 4: 'übungen/04.md'
-    - Übungsblatt 5: 'übungen/05.md'
-    - Übungsblatt 6: 'übungen/06.md'
+    #- Übungsblatt 1: 'übungen/01.md'
+    #- Übungsblatt 2: 'übungen/02.md'
+    #- Übungsblatt 3: 'übungen/03.md'
+    #- Übungsblatt 4: 'übungen/04.md'
+    #- Übungsblatt 5: 'übungen/05.md'
+    #- Übungsblatt 6: 'übungen/06.md'
     
 copyright: 'CC-BY-SA / Stefan Huber'
 
@@ -39,8 +40,11 @@ extra:
   search:
     language: de
 
-markdown_extensions:
-  - attr_list 
-  - markdown.extensions.admonition
-  - markdown.extensions.codehilite:
-      guess_lang: false
+markdown_extensions:  
+- pymdownx.highlight:
+      linenums: true
+      linenums_style: pymdownx-inline
+- attr_list
+- def_list
+- markdown.extensions.admonition  
+- pymdownx.superfences
