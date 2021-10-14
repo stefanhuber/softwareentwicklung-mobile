@@ -6,7 +6,7 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="Ergänzende Unterlagen zur Lehrveranstaltung Softwareentwicklung Mobile">
+        <meta name="description" content="Ergänzende Unterlagen zur Lehrveranstaltung App-zentrierte Softwareentwicklung">
       
       
       
@@ -20,7 +20,7 @@
     
     
       
-        <title>Simon Game - Softwareentwicklung Mobile</title>
+        <title>Übungsblatt 2 - Softwareentwicklung Mobile</title>
       
     
     
@@ -67,7 +67,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#simon-game" class="md-skip">
+        <a href="#ubungsblatt-2" class="md-skip">
           Zum Inhalt
         </a>
       
@@ -97,7 +97,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Simon Game
+              Übungsblatt 2
             
           </span>
         </div>
@@ -286,12 +286,14 @@
 
   
   
+    
+  
   
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" checked>
       
       <label class="md-nav__link" for="__nav_3">
         Übungen
@@ -312,6 +314,79 @@
       <a href="../01/" class="md-nav__link">
         Übungsblatt 1
       </a>
+    </li>
+  
+
+          
+            
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Übungsblatt 2
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        Übungsblatt 2
+      </a>
+      
+        
+<nav class="md-nav md-nav--secondary" aria-label="Inhaltsverzeichnis">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Inhaltsverzeichnis
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#ubung-1" class="md-nav__link">
+    Übung 1
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ubung-2" class="md-nav__link">
+    Übung 2
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ubung-3" class="md-nav__link">
+    Übung 3
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ubung-4" class="md-nav__link">
+    Übung 4
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -348,50 +423,29 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#ubung-0" class="md-nav__link">
-    Übung 0
+  <a href="#ubung-1" class="md-nav__link">
+    Übung 1
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#ubung-1-2h" class="md-nav__link">
-    Übung 1 (2h)
+  <a href="#ubung-2" class="md-nav__link">
+    Übung 2
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#ubung-2-1h" class="md-nav__link">
-    Übung 2 (1h)
+  <a href="#ubung-3" class="md-nav__link">
+    Übung 3
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#ubung-3-3h" class="md-nav__link">
-    Übung 3 (3h)
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#ubung-4-2h" class="md-nav__link">
-    Übung 4 (2h)
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#ubung-5-1h" class="md-nav__link">
-    Übung 5 (1h)
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#ubung-6-1h" class="md-nav__link">
-    Übung 6 (1h)
+  <a href="#ubung-4" class="md-nav__link">
+    Übung 4
   </a>
   
 </li>
@@ -413,99 +467,36 @@
                   </a>
                 
                 
-                <h1 id="simon-game">Simon Game</h1>
-<h2 id="ubung-0">Übung 0</h2>
-<p>In diesem Übungsblatt soll das Spiel "Simon Game" realisiert werden. Innerhalb der Übung 0 soll das Spiellayout erstellt werden. Dazu gibt es ein <a href="https://www.youtube.com/watch?v=uvath6G45V4">Videotutorial (https://www.youtube.com/watch?v=uvath6G45V4)</a>, welches befolgt werden soll.</p>
-<div class="admonition warning">
-<p class="admonition-title">Änderungen im Video</p>
-<p>Anstelle des <code>Button</code> soll ein <code>ImageButton</code> verwendet werden. Der <code>ImageButton</code> hat das Attribut <code>src</code>. An dieses Attribut soll die <code>Drawable Resource</code> gesetzt werden. Der <code>background</code> des <code>ImageButton</code> soll mit dem Wert <code>@android:color/transparent</code> gesetzt werden.</p>
-</div>
-<h2 id="ubung-1-2h">Übung 1 (2h)</h2>
-<p>Die 4 Buttons des Spiels können innerhalb eines Arrays hinterlegt werden (als Eigentschaft der Activity), welches in der <code>onCreate</code> Methode initialisiert werden soll. Zusätzlich soll eine Methode <code>animateButtons</code> erzeugt werden, welche eine Sequenz von Indizes (0 bis 3) für die einzelnen Buttons enthält. Die Indizes Sequenz soll nacheinander abgespielt werden.</p>
-<div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="1 "></span><span class="kd">public</span> <span class="kt">void</span> <span class="nf">animateButtons</span><span class="p">(</span><span class="kt">int</span><span class="o">[]</span> <span class="n">sequence</span><span class="p">)</span> <span class="p">{</span>
-<span class="linenos" data-linenos="2 "></span>    <span class="c1">// Sequenzielles Blinken implementieren</span>
-<span class="linenos" data-linenos="3 "></span><span class="p">}</span>
-</code></pre></div>
-<p>Mit dem <code>ObjectAnimator</code> können die Buttons animiert werden und damit kann die Blinkeigenschaft des Spieles erzeugt werden. Das Blinken des Buttons soll über die Animation des Alphawerts von <code>100%</code> auf <code>60%</code> gesetzt und wieder zurück gesetzt werden.</p>
-<p>Die Instanzen der <code>ObjectAnimator</code> Klasse können als Array in ein <code>AnimatorSet</code> über die Methode <code>playSequentially</code> hinzugefügt werden. Das <code>AnimatorSet</code> kann dann über die Methode <code>start</code> abgespielt werden.</p>
-<div class="highlight"><pre><span></span><code><span class="linenos" data-linenos=" 1 "></span><span class="c1">// Array von ObjectAnimator Instanzen erzeugen</span>
-<span class="linenos" data-linenos=" 2 "></span><span class="n">ObjectAnimator</span><span class="o">[]</span> <span class="n">oas</span> <span class="o">=</span> <span class="k">new</span> <span class="n">ObjectAnimator</span><span class="o">[</span><span class="n">sequence</span><span class="p">.</span><span class="na">length</span><span class="o">]</span><span class="p">;</span>
-<span class="linenos" data-linenos=" 3 "></span>
-<span class="linenos" data-linenos=" 4 "></span><span class="c1">// ObjectAnimator Instanzen erzeugen und im oas Array hinzufügen</span>
-<span class="linenos" data-linenos=" 5 "></span><span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">oas</span><span class="p">.</span><span class="na">length</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
-<span class="linenos" data-linenos=" 6 "></span>    <span class="c1">// oas[i] = ...</span>
-<span class="linenos" data-linenos=" 7 "></span><span class="p">}</span>
-<span class="linenos" data-linenos=" 8 "></span>
-<span class="linenos" data-linenos=" 9 "></span><span class="n">AnimatorSet</span> <span class="n">am</span> <span class="o">=</span> <span class="k">new</span> <span class="n">AnimatorSet</span><span class="p">();</span>
-<span class="linenos" data-linenos="10 "></span>
-<span class="linenos" data-linenos="11 "></span><span class="c1">// Array von ObjectAnimator Instanzen hinzufügen</span>
-<span class="linenos" data-linenos="12 "></span><span class="n">am</span><span class="p">.</span><span class="na">playSequentially</span><span class="p">(</span><span class="n">oas</span><span class="p">);</span> 
-<span class="linenos" data-linenos="13 "></span>
-<span class="linenos" data-linenos="14 "></span><span class="c1">// Alle ObjectAnimator Instanzen abspielen</span>
-<span class="linenos" data-linenos="15 "></span><span class="n">am</span><span class="p">.</span><span class="na">start</span><span class="p">();</span>
-</code></pre></div>
-<p>Als Test soll in der Methode <code>onCreate</code> die Methode <code>animateButtons</code> mit einer Testsequenz aufgerufen werden. Zum Beispiel würde die folgende Sequenz die 4 Buttons nacheinander abspielen.</p>
-<div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="1 "></span><span class="n">animateButtons</span><span class="p">(</span><span class="kt">int</span><span class="o">[]</span> <span class="p">{</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">});</span>
-</code></pre></div>
-<h2 id="ubung-2-1h">Übung 2 (1h)</h2>
-<p>Die Buttons des Spiels sollen mit einem <code>View.OnTouchListener</code> verknüpft werden. Der <code>View.OnTouchListener</code> kann zum Beispiel direkt in der <code>Activity</code> implementiert werden. Beim Eintreten des Events <code>ACTION_DOWN</code> soll der Alphawert des Buttons auf <code>60%</code> gesetzt werden. Beim Eintreten des Events <code>ACTION_UP</code> soll der Alphawert wieder auf <code>100%</code> gesetzt werden.</p>
-<h2 id="ubung-3-3h">Übung 3 (3h)</h2>
-<p>Die Sequenz, welche animiert werden soll, soll Schritt für Schritt über eine Zufallszahl zwischen 0 und 3 erzeugt werden. Bei Start der App soll eine ArrayList (diese kann dynamisch erweitert werden) mit einem Zufallswert erstellt werden (zB [3]). Der Ablauf des Spiels soll dann folgendermaßen gestaltet sein:</p>
-<ol>
-<li>Abspielen der Sequenz über die Methode <code>animateButtons</code> (Übung 1). Während des Abspielen sollen die Buttons deaktiviert sein.</li>
-<li>Nach dem Abspielen sollten alle Buttons aktiviert sein und über <code>Touch-Events</code> (Übung 2) Schritt für Schritt geprüft werden ob die eingehenden Klicks in der Reichenfolge sind, wie gewünscht in der generierten Sequenz.</li>
-<li>Falls die Sequenz von der Benutzerin richtig wiedergegeben wurde, soll eine neue Zufallszahl (zwischen 0 und 3) erzeugt werden und in der ArrayList hinzugefügt werden. Danach soll wieder bei Schritt 1 gestartet werden.</li>
-<li>Falls die Sequenz von der Benutzerin nicht richtig wiedergegeben wurde, soll die Länge der richtig gespielten Buttons über ein <code>Extra</code> an eine <code>GameOverActivity</code> (Übung 4) übergeben werden.</li>
-</ol>
+                <h1 id="ubungsblatt-2">Übungsblatt 2</h1>
+<h2 id="ubung-1">Übung 1</h2>
+<p>Die Android Dokumentation stellt ein gut dokumentiertes Tutorial <a href="https://developer.android.com/training/basics/firstapp">"Build your first app"</a> bereit. Dieses Tutorial soll Schritt für Schritt durchgearbeitet werden.</p>
+<h2 id="ubung-2">Übung 2</h2>
+<p>Erstellen Sie eine neue App mit dem Namen „Sixteen Buttons“. Diese App soll einen Screen besitzen und ein Layout. Das Layout soll dabei ein <code>LinearLayout</code> sein, welches <strong>programmatisch</strong> beim Start der Activity mit 16 Buttons befüllt wird (siehe Screenshot). Wichtig zu beachten ist, dass das <code>LinearLayout</code> von einer <code>ScrollView</code> umgeben sein soll, sodass Buttons die nicht in den Screen passen durch Scrollen erreichbar sind. Die Buttons sollen mit dem Text <code>Button 1</code> bis <code>Button 16</code> beschriftet sein.</p>
+<p><img alt="16 Buttons" src="../images/01-16-Buttons.png" style="max-width:260px;" title="16 Buttons" /></p>
 <div class="admonition info">
-<p class="admonition-title">Hinweis 1</p>
-<p>Eine einfache Möglichkeit um eine <code>ArrayList&lt;Integer&gt;</code> in ein <code>int[]</code> Array zu überführen ist über eine Schleife, wie im folgenden Snippet demonstriert:</p>
-<div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="1 "></span><span class="n">ArrayList</span><span class="o">&lt;</span><span class="n">Integer</span><span class="o">&gt;</span> <span class="n">list</span> <span class="o">=</span> <span class="k">new</span> <span class="n">ArrayList</span><span class="o">&lt;&gt;</span><span class="p">();</span>
-<span class="linenos" data-linenos="2 "></span><span class="c1">// ... Einträge hinzufügen</span>
-<span class="linenos" data-linenos="3 "></span>
-<span class="linenos" data-linenos="4 "></span><span class="kt">int</span> <span class="n">sequence</span><span class="o">[]</span> <span class="o">=</span> <span class="k">new</span> <span class="kt">int</span><span class="o">[</span><span class="n">list</span><span class="p">.</span><span class="na">size</span><span class="p">()</span><span class="o">]</span><span class="p">;</span>
-<span class="linenos" data-linenos="5 "></span><span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">sequence</span><span class="p">.</span><span class="na">length</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
-<span class="linenos" data-linenos="6 "></span>    <span class="n">sequence</span><span class="o">[</span><span class="n">i</span><span class="o">]</span> <span class="o">=</span> <span class="n">list</span><span class="p">.</span><span class="na">get</span><span class="p">(</span><span class="n">i</span><span class="p">);</span>
-<span class="linenos" data-linenos="7 "></span><span class="p">}</span>
-</code></pre></div>
+<p class="admonition-title">Hinweis</p>
+<p>Die 16 Buttons sollen innerhalb einer Schleife in der Methode <code>onCreate</code> hinzugefügt werden. Mit der Methode <code>findViewById</code> kann das <code>LinearLayout</code> im Java Code referenziert werden. Das <code>LinearLayout</code> erbt von <code>ViewGroup</code> und verfügt deshalb über die Methode <code>addView</code>. Mit der Methode <code>addView</code> können die Buttons dem Layout hinzugefügt werden.</p>
 </div>
+<h2 id="ubung-3">Übung 3</h2>
+<p>Mit Klick auf einen der Buttons soll ein <code>Toast</code> abgesetzt werden. Der Inhalt des Toasts soll folgender sein:</p>
+<blockquote>
+<p>Klick auf Button <code>x</code></p>
+</blockquote>
+<p>Dabei soll der Platzhalter <code>x</code> mit der entsprechenden Nummerierung des Buttons ausgetauscht werden. Hierbei kann der Wert der Button Aufschrift genutzt werden, welche in der vorhergehenden Übung gesetzt wurde. Mit der Methode <code>getText</code> der Klasse Button kann dieser Wert abgefragt werden.</p>
+<p><img alt="Toast" src="../images/01-Toast.png" style="max-width:260px;" title="Toast" /></p>
 <div class="admonition info">
-<p class="admonition-title">Hinweis 2</p>
-<p>Buttons können über die Methode <code>setEnabled</code> aktiviert oder deaktiviert werden.</p>
+<p class="admonition-title">Hinweis</p>
+<p>Im Android Framework ist die Klasse <code>Toast</code> definiert und die statische Methode <code>Toast.makeText</code>. Mit dieser Methode kann ein Toast erzeugt werden. Weitere Details finden Sie <a href="https://developer.android.com/guide/topics/ui/notifiers/toasts">hier</a>. </p>
 </div>
-<div class="admonition info">
-<p class="admonition-title">Hinweis 3</p>
-<p>Auf das Ende der Animationssequenz des <code>AnimatorSet</code> kann über einen Listener reagiert werden (<a href="https://developer.android.com/guide/topics/graphics/prop-animation?hl=en#listeners">Dokumentation (https://developer.android.com/guide/topics/graphics/prop-animation?hl=en#listeners)</a>).</p>
-</div>
-<h2 id="ubung-4-2h">Übung 4 (2h)</h2>
-<p>Es sollen 2 weitere <code>Activities</code> eingeführt werden und die aktuelle <code>MainActivity</code> soll zu einer <code>GameActivity</code> refactored werden:</p>
+<h2 id="ubung-4">Übung 4</h2>
+<p>Das Layout in der unten angeführten Abbildung soll <strong>exakt</strong> nachgebaut werden. Es sollen dafür nur <code>LinearLayouts</code> verwendet werden:</p>
 <ul>
-<li>Es soll eine neue <code>MainActivity</code> geben, welche 2 Buttons enthält, welche das Spiel entweder im <code>Normalen Modus</code> oder im <code>Schnellen Modus</code> starten können. Über ein <code>Extra</code> im <code>Intent</code> sollen unterschiedliche Werte für die <code>Duration</code> der Animationen übergeben werden (eine schnelle und eine normale Variante).</li>
-<li>Die <code>GameActivity</code> soll das Spiel enthalten, also alles was von Übung 0 bis Übung 3 implementiert wurde.</li>
-<li>Die <code>GameOverActivity</code> soll die Anzahl der richtig gespielten Buttons anzeigen.</li>
+<li>Layouts können verschachtelt werden.</li>
+<li>Mit Gravity (gravity) kann die Ausrichtung angegeben werden (Buttons rechts, Text Nachricht oben).</li>
+<li>Mit Weight (layout_weight) kann der Platz den eine View innerhalb eines LinearLayouts einnehmen soll bestimmt werden.</li>
+<li>Attribute der View wie <code>BackgroundTint</code> oder <code>Hint</code> beachten.</li>
 </ul>
-<div style="display:grid; grid-template-columns: 1fr 1fr 1fr; page-break-inside: avoid;">
-    <img src="../images/02-Start-framed.png">
-    <img src="../images/02-Game-framed.png">
-    <img src="../images/02-GameOver-framed.png">
-</div>
-
-<h2 id="ubung-5-1h">Übung 5 (1h)</h2>
-<p>Für die 3 Buttons (<code>Normal Mode</code>, <code>Fast Mode</code> und <code>Restart</code>), die Textfelder und den Hintergrund sollen jeweils Variablen für die Farben bzw. Styles erstellt werden. Die Styles bzw. Farbvariablen sollen entsprechend mit den UI-Elementen verknüpft werden. Folgend findet sich eine beispielhafte Angabe der Styles:</p>
-<div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="1 "></span><span class="nt">&lt;style</span> <span class="na">name=</span><span class="s">&quot;Theme.SimonGame.GameButton&quot;</span> <span class="na">parent=</span><span class="s">&quot;Widget.MaterialComponents.Button&quot;</span><span class="nt">&gt;</span>
-<span class="linenos" data-linenos="2 "></span>    <span class="c">&lt;!-- items --&gt;</span>
-<span class="linenos" data-linenos="3 "></span><span class="nt">&lt;/style&gt;</span>
-<span class="linenos" data-linenos="4 "></span><span class="nt">&lt;style</span> <span class="na">name=</span><span class="s">&quot;Theme.SimonGame.GameText&quot;</span> <span class="na">parent=</span><span class="s">&quot;Widget.MaterialComponents.TextView&quot;</span><span class="nt">&gt;</span>
-<span class="linenos" data-linenos="5 "></span>    <span class="c">&lt;!-- items --&gt;</span>
-<span class="linenos" data-linenos="6 "></span><span class="nt">&lt;/style&gt;</span>
-</code></pre></div>
-<h2 id="ubung-6-1h">Übung 6 (1h)</h2>
-<p>Für das Spiel soll es möglich sein, dass zwischen einem normalen und einem dunklen Design gewechselt werden kann. Jenachdem welche Systemeinstellung die Benutzerin trifft, soll sich auch die App anpassen. Die entsprechenden Farbwerte, welche in Übung 5 definiert wurden, sollten über den <code>night</code> Qualifier überladen werden. Das rechte Bild zeigt das Spiel im normalen Design.</p>
-<div style="display:grid; grid-template-columns: 1fr 1fr 1fr; page-break-inside: avoid;">
-    <img src="../images/02-lightmode-framed.png">
-    <img src="../images/02-darkmode-framed.png">
-    <img src="../images/02-Game-light-framed.png">
-</div>
+<p><img alt="E-Mail schreiben" src="../images/01-linear-layout.png" style="max-width:260px;" title="E-Mail schreiben" /></p>
                 
               
               
@@ -521,6 +512,26 @@
       
         
 <footer class="md-footer">
+  
+    <nav class="md-footer__inner md-grid" aria-label="Footer">
+      
+        
+        <a href="../01/" class="md-footer__link md-footer__link--prev" aria-label="Zurück: Übungsblatt 1" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Zurück
+              </span>
+              Übungsblatt 1
+            </div>
+          </div>
+        </a>
+      
+      
+    </nav>
   
   <div class="md-footer-meta md-typeset">
     <div class="md-footer-meta__inner md-grid">

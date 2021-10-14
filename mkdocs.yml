@@ -1,7 +1,7 @@
 site_name: Softwareentwicklung Mobile
 site_url: https://stefanhuber.github.io/softwareentwicklung-mobile/
 site_author: Stefan Huber
-site_description: Ergänzende Unterlagen zur Lehrveranstaltung Softwareentwicklung Mobile
+site_description: Ergänzende Unterlagen zur Lehrveranstaltung App-zentrierte Softwareentwicklung
 
 repo_name: stefanhuber/softwareentwicklung-mobile
 repo_url: https://github.com/stefanhuber/softwareentwicklung-mobile 
@@ -24,7 +24,7 @@ nav:
     - adb: 'tutorials/adb.md'
   - Übungen:
     - Übungsblatt 1: 'übungen/01.md'
-    #- Übungsblatt 1: 'übungen/01.md'
+    - Übungsblatt 2: 'übungen/02.md'
     #- Übungsblatt 2: 'übungen/02.md'
     #- Übungsblatt 3: 'übungen/03.md'
     #- Übungsblatt 4: 'übungen/04.md'
