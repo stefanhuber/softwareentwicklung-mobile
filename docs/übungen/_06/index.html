@@ -13,14 +13,14 @@
         <meta name="author" content="Stefan Huber">
       
       
-        <link rel="canonical" href="https://stefanhuber.github.io/softwareentwicklung-mobile/%C3%BCbungen/05/">
+        <link rel="canonical" href="https://stefanhuber.github.io/softwareentwicklung-mobile/%C3%BCbungen/_06/">
       
       <link rel="icon" href="../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.2.2, mkdocs-material-7.2.0">
     
     
       
-        <title>Übungsblatt 5 - Softwareentwicklung Mobile</title>
+        <title>Übungsblatt 6 - Softwareentwicklung Mobile</title>
       
     
     
@@ -67,7 +67,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#ubungsblatt-5" class="md-skip">
+        <a href="#ubungsblatt-6" class="md-skip">
           Zum Inhalt
         </a>
       
@@ -97,7 +97,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Übungsblatt 5
+              Übungsblatt 6
             
           </span>
         </div>
@@ -328,6 +328,18 @@
   
 
           
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../03/" class="md-nav__link">
+        Übungsblatt 3
+      </a>
+    </li>
+  
+
+          
         </ul>
       </nav>
     </li>
@@ -364,32 +376,45 @@
     Übung 0
   </a>
   
+    <nav class="md-nav" aria-label="Übung 0">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#voraussetzungen" class="md-nav__link">
+    Voraussetzungen
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#docs-ordner" class="md-nav__link">
+    Docs Ordner
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#package-management" class="md-nav__link">
+    Package Management
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
-  <a href="#ubung-1-4h" class="md-nav__link">
-    Übung 1 (4h)
+  <a href="#ubung-1-9h" class="md-nav__link">
+    Übung 1 (9h)
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#ubung-2-4h" class="md-nav__link">
-    Übung 2 (4h)
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#ubung-3-1h" class="md-nav__link">
-    Übung 3 (1h)
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#ubung-4-3h" class="md-nav__link">
-    Übung 4 (3h)
+  <a href="#ubung-2-1h" class="md-nav__link">
+    Übung 2 (1h)
   </a>
   
 </li>
@@ -406,69 +431,65 @@
             <article class="md-content__inner md-typeset">
               
                 
-                  <a href="https://github.com/stefanhuber/softwareentwicklung-mobile/edit/master/content/übungen/05.md" title="Seite editieren" class="md-content__button md-icon">
+                  <a href="https://github.com/stefanhuber/softwareentwicklung-mobile/edit/master/content/übungen/_06.md" title="Seite editieren" class="md-content__button md-icon">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></svg>
                   </a>
                 
                 
-                <h1 id="ubungsblatt-5">Übungsblatt 5</h1>
-<p>Die App <strong>Geo Tracker</strong> soll eine Route, welche beispielsweise zu Fuß begangen wird, tracken und entsprechend über eine Karte anzeigen können. Tracken in diesem Zusammenhang bedeutet, dass die Geokoordinaten kontinuierlich abgefragt und gespeichert werden.</p>
-<p>Die Datenstrukturen in der Datenbank sollen folgend aussehen:</p>
-<div class="highlight"><pre><span></span><code><span class="linenos" data-linenos=" 1 "></span><span class="kd">class</span> <span class="nc">Track</span> <span class="p">{</span>
-<span class="linenos" data-linenos=" 2 "></span>    <span class="kd">public</span> <span class="kt">long</span> <span class="n">id</span><span class="p">;</span>
-<span class="linenos" data-linenos=" 3 "></span>    <span class="kd">public</span> <span class="n">String</span> <span class="n">title</span><span class="p">;</span>
-<span class="linenos" data-linenos=" 4 "></span>    <span class="kd">public</span> <span class="n">String</span> <span class="n">description</span><span class="p">;</span>
-<span class="linenos" data-linenos=" 5 "></span>    <span class="kd">public</span> <span class="n">Date</span> <span class="n">start</span><span class="p">;</span>
-<span class="linenos" data-linenos=" 6 "></span>    <span class="kd">public</span> <span class="n">Date</span> <span class="n">end</span><span class="p">;</span>
-<span class="linenos" data-linenos=" 7 "></span><span class="p">}</span>
-<span class="linenos" data-linenos=" 8 "></span>
-<span class="linenos" data-linenos=" 9 "></span><span class="kd">class</span> <span class="nc">Location</span> <span class="p">{</span>
-<span class="linenos" data-linenos="10 "></span>    <span class="kd">public</span> <span class="kt">long</span> <span class="n">id</span><span class="p">;</span>
-<span class="linenos" data-linenos="11 "></span>    <span class="kd">public</span> <span class="kt">double</span> <span class="n">latitude</span><span class="p">;</span>
-<span class="linenos" data-linenos="12 "></span>    <span class="kd">public</span> <span class="kt">double</span> <span class="n">longitude</span><span class="p">;</span>
-<span class="linenos" data-linenos="13 "></span>    <span class="kd">public</span> <span class="kt">double</span> <span class="n">altidude</span><span class="p">;</span>
-<span class="linenos" data-linenos="14 "></span>    <span class="kd">public</span> <span class="n">Date</span> <span class="n">timestamp</span><span class="p">;</span>
-<span class="linenos" data-linenos="15 "></span>    <span class="kd">public</span> <span class="kt">long</span> <span class="n">trackId</span><span class="p">;</span>
-<span class="linenos" data-linenos="16 "></span><span class="p">}</span>
-</code></pre></div>
+                <h1 id="ubungsblatt-6">Übungsblatt 6</h1>
 <h2 id="ubung-0">Übung 0</h2>
-<p>Innerhalb einer <code>RecyclerView</code> sollen aufgenommene Tracks angezeigt werden. Jeder Track soll dabei als <code>CardView</code> realisiert werden. Die <code>CardView</code> soll mittels des Material Designs realisiert werden (<a href="https://material.io/develop/android/components/cards">Link</a>).</p>
-<p>Eine <code>CardView</code> soll folgendes enthalten:</p>
+<h4 id="voraussetzungen">Voraussetzungen</h4>
+<p>Damit WebXR Projekte lokal entwickelt werden können, muss <a href="https://nodejs.org">nodejs</a> installiert werden. Das Command <code>node</code> und <code>npm</code> müssen über die Kommandozeile ausführbar sein. Innerhalb einer Powershell oder Bash sollten die folgenden Commands ein ähnliches Bild liefern:</p>
+<p><img alt="Powershell node und npm Ausführung" src="../images/06-powershell.png" style="max-width:360px;" title="Powershell node und npm Ausführung" /></p>
+<h4 id="docs-ordner">Docs Ordner</h4>
+<p>Das gesamte Projekt soll im Ordner <code>docs</code> entwickelt werden. Dieser Ordner kann dann über Github.io öffentlich geteilt werden.</p>
+<p>Im Ordner <code>docs</code> soll die Datei <code>index.html</code> erstellt werden. Der Inhalt dieser Datei soll folgendermaßen aussehen:</p>
+<div class="highlight"><pre><span></span><code><span class="linenos" data-linenos=" 1 "></span><span class="p">&lt;</span><span class="nt">html</span><span class="p">&gt;</span>
+<span class="linenos" data-linenos=" 2 "></span>    <span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
+<span class="linenos" data-linenos=" 3 "></span>        <span class="p">&lt;</span><span class="nt">script</span> <span class="na">src</span><span class="o">=</span><span class="s">&quot;https://aframe.io/releases/1.1.0/aframe.min.js&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+<span class="linenos" data-linenos=" 4 "></span>    <span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
+<span class="linenos" data-linenos=" 5 "></span>    <span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
+<span class="linenos" data-linenos=" 6 "></span>        <span class="p">&lt;</span><span class="nt">a-scene</span><span class="p">&gt;</span>
+<span class="linenos" data-linenos=" 7 "></span>            <span class="p">&lt;</span><span class="nt">a-box</span> <span class="na">position</span><span class="o">=</span><span class="s">&quot;0 1 -5&quot;</span><span class="p">&gt;</span>
+<span class="linenos" data-linenos=" 8 "></span>            <span class="p">&lt;/</span><span class="nt">a-box</span><span class="p">&gt;</span>
+<span class="linenos" data-linenos=" 9 "></span>        <span class="p">&lt;/</span><span class="nt">a-scene</span><span class="p">&gt;</span>
+<span class="linenos" data-linenos="10 "></span>    <span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
+<span class="linenos" data-linenos="11 "></span><span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
+</code></pre></div>
+<h4 id="package-management">Package Management</h4>
+<p>Im Projektordner soll eine Datei <code>package.json</code> erstellt werden  folgendem Inhalt:</p>
+<div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="1 "></span><span class="p">{</span>
+<span class="linenos" data-linenos="2 "></span>    <span class="nt">&quot;scripts&quot;</span><span class="p">:</span> <span class="p">{</span>
+<span class="linenos" data-linenos="3 "></span>        <span class="nt">&quot;start&quot;</span><span class="p">:</span> <span class="s2">&quot;live-server docs&quot;</span>
+<span class="linenos" data-linenos="4 "></span>    <span class="p">}</span>
+<span class="linenos" data-linenos="5 "></span><span class="p">}</span>
+</code></pre></div>
+<p>Nachdem soll mit <code>npm i live-server --save-dev</code> die Bibliothek <code>live-server</code> installiert werden. Durch die Ausführung <code>npm start</code> im Projektordner wird ein Web-Server gestartet, der bei Dateiänderungen das Projekt im Web-Browser neu lädt.</p>
+<h2 id="ubung-1-9h">Übung 1 (9h)</h2>
+<p>Es soll eine beliebige und individuelle 3D-Welt mit A-Frame erstellt werden. Diese 3D-Welt soll zumindest folgende Elemente enthalten:</p>
 <ul>
-<li>Titel</li>
-<li>Dauer des Tracks (zB 1h 14min)</li>
-<li>Beschreibung (falls vorhanden)</li>
-<li>Buttons: Edit, Map</li>
+<li>Zumindest eine <code>a-plane</code> als Boden und ein <code>a-sky</code> als Himmel</li>
+<li>Zumindest eine Animation</li>
+<li>Zumindest eine Gaze-based Interaction mit einem Element in der 3D-Welt</li>
+<li>Zumindest ein Element mit einer Textur</li>
+<li>Zumindest ein importiertes gltf-Modell</li>
+<li>Zumindest ein Lichteffekt</li>
+<li>Zumindest ein Audioeffekt</li>
 </ul>
-<p>Es soll ebenfalls ein Floating Action Button angelegt werden, welcher bei Klick prüfen soll, ob die Permission zum Tracking vorhanden sind und ob GPS aktiviert ist.</p>
-<h2 id="ubung-1-4h">Übung 1 (4h)</h2>
-<p>Das Tracking soll innerhalb eines <code>Foreground Service</code> realisiert werden. Der Service soll dabei in der Methode <code>onStartCommand</code> auf 4 Intent Actions reagieren:</p>
+<p>Beispiele für 3D-Welten:</p>
 <ul>
-<li>
-<p><code>TOGGLE</code>: Dieser Intent soll grundsätzlich nur von der MainActivity der App kommen. Da in der App der Status des Services nicht bekannt ist, sollen unterschiedliche passieren:</p>
-<ul>
-<li>Falls der Service aktuell kein Tracking durchführt, soll ein neuer Track erzeugt werden und das Tracking soll gestartet werden.</li>
-<li>Falls der Service aktuell ein Tracking durchführt, soll dieses pausiert werden.</li>
-<li>Falls der Service aktuell ein Tracking pausiert hat, soll dieses wieder gestartet werden.</li>
+<li>Haus mit Türen, Fenster und Garten</li>
+<li>Hochhaus mit steuerbarem Aufzug</li>
+<li>Einfache Zugstrecke mit Zug in den man einsteigen kann</li>
+<li>Einfaches Labyrinth mit einfachem Schalter </li>
 </ul>
-</li>
-<li>
-<p><code>CONTINUE</code>: Dieser Intent soll grundsätzlich nur von der Notification kommen und das Tracking weiterführen.</p>
-</li>
-<li><code>PAUSE</code>: Dieser Intent soll grundsätzlich nur von der Notification kommen und das Tracking pausieren.</li>
-<li><code>STOP</code>: Dieser Intent soll grundsätzlich nur von der Notification kommen und das Tracking stoppen.</li>
-</ul>
-<p>Innerhalb der Übung 1 soll sich dabei nur die Notification entsprechend verändern. Das tatsächliche Tracking soll innerhalb von Übung 2 realisiert werden.</p>
-<h2 id="ubung-2-4h">Übung 2 (4h)</h2>
-<p>Beim Start des Trackings soll einer neuer <code>Track</code> in der Datenbank angelegt werden der Titel soll dabei vorläufig mit Datum und Uhrzeit belegt werden, das Startdatum mit dem aktuellen Timestamp. Mit dem <code>FusedLocationProvider</code> sollen im Interval von 5 Sekunden und einer mindest Änderung von 5 Metern getrackt werden. Jedes <code>Location Update</code> soll als <code>Location</code> in die Datenbank gespeichert werden. Das Tracking soll entsprechend gesteuert werden über die Intentverarbeitung aus Übung 1.</p>
-<h2 id="ubung-3-1h">Übung 3 (1h)</h2>
-<p>Mit Klick auf den <code>Edit</code> Button auf der <code>Card</code> in der <code>RecyclerView</code> soll ein Formular geöffnet werden. Im Formular soll der Titel und die Beschreibung des Tracks editiert werden können.</p>
-<p>Beim Laden des Formulars sollen die bestehenden Inhalte in das Formular geladen werden.</p>
-<h2 id="ubung-4-3h">Übung 4 (3h)</h2>
-<p>Es soll eine Karteansicht der getrackten Route dargestellt werden. Dazu soll im ersten Schritt die osmdroid MapView innerhalb einer neuen Activity (MapActivity) angezeigt werden. Dabei soll das Mapnik Kartenmaterial verwendet werden. Bei Klick auf „Track anzeigen“ wird diese MapActivity geöffnet (Aktuelle Version osmdroid: 6.1.8).</p>
-<p>Innerhalb der Karte soll die getrackte Route dargestellt werden. Dazu kann eine sog. Polyline verwendet werden, welche die Punkte geordnet nach Datum als Liste bereitstellt.
-Link: <a href="http://osmdroid.github.io/osmdroid/Markers,-Lines-and-Polygons.html">http://osmdroid.github.io/osmdroid/Markers,-Lines-and-Polygons.html</a></p>
-<p>Die <code>Location</code> Objekte sollen über den Dao abgefragt werden. Die Query soll dabei die Track ID verwenden. Die <code>Locations</code> müssen dabei nach  Timestamp sortiert werden.</p>
+<h2 id="ubung-2-1h">Übung 2 (1h)</h2>
+<p>Der Projektordner soll als Git-Repository initialisiert werden (<code>git init</code>). Auf Github soll ein neues Projekt erstellt werden. Mit dem Command <code>git remote add ...</code> soll das remote Github Projekt mit dem lokalen Git-Repository verknüpft werden.</p>
+<p>Auf Github soll für das Projekt <code>Github Pages</code> eingerichtet werden in den Settings (siehe <a href="https://pages.github.com/">Github Pages</a>). Mit <code>git push</code> werden die Inhalte aus dem <code>docs</code> Ordner auf der Domain <code>username.github.io/projectname</code> veröffentlicht werden.</p>
+<div class="admonition info">
+<p class="admonition-title">Hinweis</p>
+<p>Es soll eine sinnvolle <code>.gitingore</code> Datei erstellt werden um <code>node_modules</code> zu ignorieren.</p>
+</div>
                 
               
               

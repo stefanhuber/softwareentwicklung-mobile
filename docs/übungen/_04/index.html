@@ -13,14 +13,14 @@
         <meta name="author" content="Stefan Huber">
       
       
-        <link rel="canonical" href="https://stefanhuber.github.io/softwareentwicklung-mobile/%C3%BCbungen/06/">
+        <link rel="canonical" href="https://stefanhuber.github.io/softwareentwicklung-mobile/%C3%BCbungen/_04/">
       
       <link rel="icon" href="../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.2.2, mkdocs-material-7.2.0">
     
     
       
-        <title>Übungsblatt 6 - Softwareentwicklung Mobile</title>
+        <title>Übungsblatt 4 - Softwareentwicklung Mobile</title>
       
     
     
@@ -67,7 +67,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#ubungsblatt-6" class="md-skip">
+        <a href="#ubungsblatt-4" class="md-skip">
           Zum Inhalt
         </a>
       
@@ -97,7 +97,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Übungsblatt 6
+              Übungsblatt 4
             
           </span>
         </div>
@@ -328,6 +328,18 @@
   
 
           
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../03/" class="md-nav__link">
+        Übungsblatt 3
+      </a>
+    </li>
+  
+
+          
         </ul>
       </nav>
     </li>
@@ -364,45 +376,32 @@
     Übung 0
   </a>
   
-    <nav class="md-nav" aria-label="Übung 0">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#voraussetzungen" class="md-nav__link">
-    Voraussetzungen
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#docs-ordner" class="md-nav__link">
-    Docs Ordner
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#package-management" class="md-nav__link">
-    Package Management
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
 </li>
       
         <li class="md-nav__item">
-  <a href="#ubung-1-9h" class="md-nav__link">
-    Übung 1 (9h)
+  <a href="#ubung-1-15h" class="md-nav__link">
+    Übung 1 (1,5h)
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#ubung-2-1h" class="md-nav__link">
-    Übung 2 (1h)
+  <a href="#ubung-2-45h" class="md-nav__link">
+    Übung 2 (4,5h)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ubung-3-3h" class="md-nav__link">
+    Übung 3 (3h)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ubung-4-15h" class="md-nav__link">
+    Übung 4 (1,5h)
   </a>
   
 </li>
@@ -419,65 +418,22 @@
             <article class="md-content__inner md-typeset">
               
                 
-                  <a href="https://github.com/stefanhuber/softwareentwicklung-mobile/edit/master/content/übungen/06.md" title="Seite editieren" class="md-content__button md-icon">
+                  <a href="https://github.com/stefanhuber/softwareentwicklung-mobile/edit/master/content/übungen/_04.md" title="Seite editieren" class="md-content__button md-icon">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></svg>
                   </a>
                 
                 
-                <h1 id="ubungsblatt-6">Übungsblatt 6</h1>
+                <h1 id="ubungsblatt-4">Übungsblatt 4</h1>
 <h2 id="ubung-0">Übung 0</h2>
-<h4 id="voraussetzungen">Voraussetzungen</h4>
-<p>Damit WebXR Projekte lokal entwickelt werden können, muss <a href="https://nodejs.org">nodejs</a> installiert werden. Das Command <code>node</code> und <code>npm</code> müssen über die Kommandozeile ausführbar sein. Innerhalb einer Powershell oder Bash sollten die folgenden Commands ein ähnliches Bild liefern:</p>
-<p><img alt="Powershell node und npm Ausführung" src="../images/06-powershell.png" style="max-width:360px;" title="Powershell node und npm Ausführung" /></p>
-<h4 id="docs-ordner">Docs Ordner</h4>
-<p>Das gesamte Projekt soll im Ordner <code>docs</code> entwickelt werden. Dieser Ordner kann dann über Github.io öffentlich geteilt werden.</p>
-<p>Im Ordner <code>docs</code> soll die Datei <code>index.html</code> erstellt werden. Der Inhalt dieser Datei soll folgendermaßen aussehen:</p>
-<div class="highlight"><pre><span></span><code><span class="linenos" data-linenos=" 1 "></span><span class="p">&lt;</span><span class="nt">html</span><span class="p">&gt;</span>
-<span class="linenos" data-linenos=" 2 "></span>    <span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
-<span class="linenos" data-linenos=" 3 "></span>        <span class="p">&lt;</span><span class="nt">script</span> <span class="na">src</span><span class="o">=</span><span class="s">&quot;https://aframe.io/releases/1.1.0/aframe.min.js&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
-<span class="linenos" data-linenos=" 4 "></span>    <span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
-<span class="linenos" data-linenos=" 5 "></span>    <span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
-<span class="linenos" data-linenos=" 6 "></span>        <span class="p">&lt;</span><span class="nt">a-scene</span><span class="p">&gt;</span>
-<span class="linenos" data-linenos=" 7 "></span>            <span class="p">&lt;</span><span class="nt">a-box</span> <span class="na">position</span><span class="o">=</span><span class="s">&quot;0 1 -5&quot;</span><span class="p">&gt;</span>
-<span class="linenos" data-linenos=" 8 "></span>            <span class="p">&lt;/</span><span class="nt">a-box</span><span class="p">&gt;</span>
-<span class="linenos" data-linenos=" 9 "></span>        <span class="p">&lt;/</span><span class="nt">a-scene</span><span class="p">&gt;</span>
-<span class="linenos" data-linenos="10 "></span>    <span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
-<span class="linenos" data-linenos="11 "></span><span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
-</code></pre></div>
-<h4 id="package-management">Package Management</h4>
-<p>Im Projektordner soll eine Datei <code>package.json</code> erstellt werden  folgendem Inhalt:</p>
-<div class="highlight"><pre><span></span><code><span class="linenos" data-linenos="1 "></span><span class="p">{</span>
-<span class="linenos" data-linenos="2 "></span>    <span class="nt">&quot;scripts&quot;</span><span class="p">:</span> <span class="p">{</span>
-<span class="linenos" data-linenos="3 "></span>        <span class="nt">&quot;start&quot;</span><span class="p">:</span> <span class="s2">&quot;live-server docs&quot;</span>
-<span class="linenos" data-linenos="4 "></span>    <span class="p">}</span>
-<span class="linenos" data-linenos="5 "></span><span class="p">}</span>
-</code></pre></div>
-<p>Nachdem soll mit <code>npm i live-server --save-dev</code> die Bibliothek <code>live-server</code> installiert werden. Durch die Ausführung <code>npm start</code> im Projektordner wird ein Web-Server gestartet, der bei Dateiänderungen das Projekt im Web-Browser neu lädt.</p>
-<h2 id="ubung-1-9h">Übung 1 (9h)</h2>
-<p>Es soll eine beliebige und individuelle 3D-Welt mit A-Frame erstellt werden. Diese 3D-Welt soll zumindest folgende Elemente enthalten:</p>
-<ul>
-<li>Zumindest eine <code>a-plane</code> als Boden und ein <code>a-sky</code> als Himmel</li>
-<li>Zumindest eine Animation</li>
-<li>Zumindest eine Gaze-based Interaction mit einem Element in der 3D-Welt</li>
-<li>Zumindest ein Element mit einer Textur</li>
-<li>Zumindest ein importiertes gltf-Modell</li>
-<li>Zumindest ein Lichteffekt</li>
-<li>Zumindest ein Audioeffekt</li>
-</ul>
-<p>Beispiele für 3D-Welten:</p>
-<ul>
-<li>Haus mit Türen, Fenster und Garten</li>
-<li>Hochhaus mit steuerbarem Aufzug</li>
-<li>Einfache Zugstrecke mit Zug in den man einsteigen kann</li>
-<li>Einfaches Labyrinth mit einfachem Schalter </li>
-</ul>
-<h2 id="ubung-2-1h">Übung 2 (1h)</h2>
-<p>Der Projektordner soll als Git-Repository initialisiert werden (<code>git init</code>). Auf Github soll ein neues Projekt erstellt werden. Mit dem Command <code>git remote add ...</code> soll das remote Github Projekt mit dem lokalen Git-Repository verknüpft werden.</p>
-<p>Auf Github soll für das Projekt <code>Github Pages</code> eingerichtet werden in den Settings (siehe <a href="https://pages.github.com/">Github Pages</a>). Mit <code>git push</code> werden die Inhalte aus dem <code>docs</code> Ordner auf der Domain <code>username.github.io/projectname</code> veröffentlicht werden.</p>
-<div class="admonition info">
-<p class="admonition-title">Hinweis</p>
-<p>Es soll eine sinnvolle <code>.gitingore</code> Datei erstellt werden um <code>node_modules</code> zu ignorieren.</p>
-</div>
+<p>Es soll eine <code>MainActivity</code> und eine <code>CameraActivity</code> erstellt werden.</p>
+<h2 id="ubung-1-15h">Übung 1 (1,5h)</h2>
+<p>In der <code>MainActivity</code> soll ein 3x3 Grid von <code>ImageButtons</code> erstellt werden. Das Bild, welches mit der <code>CameraActivity</code> erstellt wurde, soll in 9 quadratische Teile geschnitten werden und 8 dieser Ausschnitte sollen jeweils über die Methode <code>setImageBitmap</code> an den <code>ImageButtons</code> gesetzt werden. Der 9. Button soll existieren, aber kein Bild enthalten.</p>
+<h2 id="ubung-2-45h">Übung 2 (4,5h)</h2>
+<p>Die <code>ImageButtons</code> sollen beweglich sein. Zu einem Zeitpunkt sollen aber nur jene 2 oder 3 <code>ImageButtons</code> beweglich sein, welche neben der freien Fläche liegen. Es soll sichergestellt sein, dass <code>ImageButton</code> nur an dem vorgesehenen Platz zum liegen kommen kann (Berücksichtigung des Rasters). Sollte die Benutzerin die Bewegung frühzeitig abbrechen (<code>ACTION_UP</code> bevor der <code>ImageButton</code> am richtigen Ort liegt), soll der <code>ImageButton</code> durch eine kurze Animation zum richtigen Ablageort gelegt werden.</p>
+<h2 id="ubung-3-3h">Übung 3 (3h)</h2>
+<p>Mit Klick auf den linken unteren Button in der <code>MainActivity</code> soll das Puzzle neu gemischt werden. Die <code>ImageButtons</code> sollen so gemischt werden, dass das Spiel zu einer Lösung führen kann.</p>
+<h2 id="ubung-4-15h">Übung 4 (1,5h)</h2>
+<p>Wird das Puzzle in den Enzustand geführt (alle Plättchen befinden sich am richtigen Ort) soll der 9. <code>ImageButton</code> auch das Teilbild gesetzt bekommen. Das Bild soll solange bestehen bleiben, bis ein neues Foto mit der Kamera gemacht wird oder neu gemischt wird.</p>
                 
               
               
