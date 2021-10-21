@@ -25,7 +25,7 @@ nav:
   - Übungen:
     - Übungsblatt 1: 'übungen/01.md'
     - Übungsblatt 2: 'übungen/02.md'
-    #- Übungsblatt 2: 'übungen/02.md'
+    - Übungsblatt 3: 'übungen/03.md'
     #- Übungsblatt 3: 'übungen/03.md'
     #- Übungsblatt 4: 'übungen/04.md'
     #- Übungsblatt 5: 'übungen/05.md'
