@@ -2,67 +2,72 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://stefanhuber.github.io/softwareentwicklung-mobile/</loc>
-         <lastmod>2021-10-28</lastmod>
+         <lastmod>2021-11-04</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://stefanhuber.github.io/softwareentwicklung-mobile/tutorials/adb/</loc>
-         <lastmod>2021-10-28</lastmod>
+         <lastmod>2021-11-04</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://stefanhuber.github.io/softwareentwicklung-mobile/tutorials/apps-ausf%C3%BChren/</loc>
-         <lastmod>2021-10-28</lastmod>
+         <lastmod>2021-11-04</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://stefanhuber.github.io/softwareentwicklung-mobile/tutorials/neues-projekt/</loc>
-         <lastmod>2021-10-28</lastmod>
+         <lastmod>2021-11-04</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://stefanhuber.github.io/softwareentwicklung-mobile/%C3%BCbungen/01/</loc>
-         <lastmod>2021-10-28</lastmod>
+         <lastmod>2021-11-04</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://stefanhuber.github.io/softwareentwicklung-mobile/%C3%BCbungen/02/</loc>
-         <lastmod>2021-10-28</lastmod>
+         <lastmod>2021-11-04</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://stefanhuber.github.io/softwareentwicklung-mobile/%C3%BCbungen/03/</loc>
-         <lastmod>2021-10-28</lastmod>
+         <lastmod>2021-11-04</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://stefanhuber.github.io/softwareentwicklung-mobile/%C3%BCbungen/04/</loc>
-         <lastmod>2021-10-28</lastmod>
+         <lastmod>2021-11-04</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://stefanhuber.github.io/softwareentwicklung-mobile/%C3%BCbungen/05/</loc>
+         <lastmod>2021-11-04</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://stefanhuber.github.io/softwareentwicklung-mobile/%C3%BCbungen/_02/</loc>
-         <lastmod>2021-10-28</lastmod>
+         <lastmod>2021-11-04</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://stefanhuber.github.io/softwareentwicklung-mobile/%C3%BCbungen/_03/</loc>
-         <lastmod>2021-10-28</lastmod>
+         <lastmod>2021-11-04</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://stefanhuber.github.io/softwareentwicklung-mobile/%C3%BCbungen/_04/</loc>
-         <lastmod>2021-10-28</lastmod>
+         <lastmod>2021-11-04</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://stefanhuber.github.io/softwareentwicklung-mobile/%C3%BCbungen/_05/</loc>
-         <lastmod>2021-10-28</lastmod>
+         <lastmod>2021-11-04</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://stefanhuber.github.io/softwareentwicklung-mobile/%C3%BCbungen/_06/</loc>
-         <lastmod>2021-10-28</lastmod>
+         <lastmod>2021-11-04</lastmod>
          <changefreq>daily</changefreq>
     </url>
 </urlset>
